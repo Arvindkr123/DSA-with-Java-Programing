@@ -2,7 +2,7 @@ import java.util.Arrays;
 
 import javax.naming.spi.DirStateFactory.Result;
 
-public class ConcatenationOfArray{
+public class ConcatenationOfArray {
     public static void main(String[] args) {
         int [] arr = {1,2,1};
         int[] reslt = getConcatenationOfArray(arr);

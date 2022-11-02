@@ -13,7 +13,12 @@ public class ShuffleArray2 {
     private static int[] getShuffleArray(int[] arr, int n) {
         int[] res = new int[n*2];
         for (int i = 0; i <arr.length; i++) {
-            res[i] = i%2==0?arr[i/2]:arr[n+i/2];
+//            res[i] = i%2==0?arr[i/2]:arr[n+i/2];
+            if(i%2==0){
+                res[i] = arr[i/2];
+            }else{
+                res[i] = arr[n+i/2];
+            }
         }
         return res;
     }
